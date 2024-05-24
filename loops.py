@@ -1,18 +1,26 @@
-def index_of_by_index(word, list, index):
-    return -1
+def enumerate_list(lista):
+    #nueva lista para no modificar la primera
+    nueva_lis=[]
+    indice = 0
+    for elemento in lista:
+        if elemento!= "":
+            nueva_lis.append(f"{indice}. {elemento}")
+            indice = indice + 1
+    return nueva_lis
+
+colors = ["Red", "Green", "", "White", "Black"]
+enumerate_list(colors)
 
 
-def index_of_empty(list):
-    return -1
 
 
-def index_of(word, list):
-    return -1
 
-
-def put(word, list):
-    return -1
-
-
-def remove(word, list):
-    return -1
+def enumerate_backwards(list):
+    nueva_lis = []
+    indice = 0
+    for elemento in list:
+        elemento= elemento[::-1]
+        if elemento != "":
+            nueva_lis.append(f"{indice}. {elemento}")
+            indice = indice + 1
+    return nueva_lis
